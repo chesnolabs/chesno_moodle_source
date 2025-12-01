@@ -59,3 +59,10 @@ phpcs.xml
 jsconfig.json
 UPGRADING-CURRENT.md
 .phpunit.cache
+
+# Custom ignores for generated files and backups
+/cache/
+/muc/
+/public/cache/
+/public/localcache/
+/public/muc/
