@@ -1,7 +1,8 @@
 <?php  // Moodle configuration file
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!															   !!!
-// !!!  CAUTION!!! DON'T PUT SENSITIVE INFORMATION INTO THIS FILE  !!!
+// !!!  				!!!CAUTION!!!							   !!!
+// !!!		DON'T PUT SENSITIVE INFORMATION INTO THIS FILE		   !!!
 // !!!			IT GOES TO THE GITHUB REPOSITORY			   	   !!!
 // !!! PUT PASSWORDS TO THE .env FILE AND GET THEM HERE VIA getenv !!!
 // !!!															   !!!
