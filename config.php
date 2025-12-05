@@ -27,6 +27,7 @@ $CFG->dboptions = [
 ];
 
 $CFG->wwwroot   = getenv('MOODLE_WWWROOT');
+$CFG->sslproxy = 1; // Tells Moodle it is behind an SSL-terminating reverse proxy
 $CFG->dataroot  = getenv('MOODLE_DATAROOT');
 $CFG->admin     = 'admin';
 
