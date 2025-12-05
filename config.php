@@ -37,6 +37,17 @@ $CFG->directorypermissions = 0777;
 $CFG->upgradekey = getenv('MOODLE_UPGRADEKEY') ?: null;
 $CFG->passwordpepper = getenv('MOODLE_PASSWORD_PEPPER') ?: null;
 
+// --- Outgoing Mail Configuration ---
+// See .env.example for details.
+if (getenv('MOODLE_SMTP_HOSTS')) {
+    $CFG->smtphosts   = getenv('MOODLE_SMTP_HOSTS');
+    $CFG->smtpuser    = getenv('MOODLE_SMTP_USER');
+    $CFG->smtppass    = getenv('MOODLE_SMTP_PASS');
+    $CFG->smtpsecure  = getenv('MOODLE_SMTP_SECURITY');
+    $CFG->noreplyaddress = getenv('MOODLE_NOREPLY_ADDRESS') ?: 'noreply@yourdomain.com';
+    $CFG->noreplyname = getenv('MOODLE_NOREPLY_NAME') ?: 'Moodle';
+}
+
 require_once(__DIR__ . '/lib/setup.php');
 
 // There is no php closing tag in this file,
